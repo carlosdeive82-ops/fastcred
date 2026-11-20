@@ -15,7 +15,7 @@ window.APP_CONFIG={
   nome:'FastCred Solution',                          // nome padrão (cada cliente pode trocar o dele em Ajustes)
   supabaseUrl:'https://phrabjxrquvzpmdbbqhb.supabase.co',     // Supabase > Project Settings > API > Project URL
   supabaseAnonKey:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBocmFianhycXV2enBtZGJicWhiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUxMjg0MjYsImV4cCI6MjExMDcwNDQyNn0.uKZwJ7xYDtSFpTUiXT1sw-qGphU-IGXGIXqTHRp6mZs',    // Supabase > Project Settings > API > anon public
-  appUrl:'https://carlosdeive82-ops.github.io/fastcred/',                                 // endereço do app publicado, ex.: https://seuusuario.github.io/fastcred/
+  appUrl:'https://fastcredsolution.com.br/',                                 // endereço do app publicado, ex.: https://seuusuario.github.io/fastcred/
   preco:29.90,                               // mesmo valor do segredo PRECO no Supabase
   precoTexto:'R$ 29,90',
   diasTeste:7                                // igual ao SQL (interval '7 days')
@@ -651,7 +651,7 @@ const peek=(y,m)=>S.months[mk(y,m)]||{goal:0,cgoal:null,days:{},ov:{}};
 const dv=x=>x?+x.v||0:0, dc=x=>x?+x.c||0:0;
 
 /* ================= Conta, assinatura e nuvem (Supabase) ================= */
-const APP_VERSAO='1.0.1';
+const APP_VERSAO='1.0.2';
 const CFG=Object.assign({nome:'FastCred Solution',preco:29.9,precoTexto:'R$ 29,90',diasTeste:7},window.APP_CONFIG||{});
 const DEMO=!/^https:\/\//.test(CFG.supabaseUrl||'');
 let SB=null,USER=null,SUB=null,ADMIN=false,cloud='local',started=false,authSignup=false;
